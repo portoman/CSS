@@ -1,0 +1,33 @@
+/*
+#####SELECTORES####
+*/
+
+/*Selector universal->*: Se seleccionan todos los elementos del html */
+
+*{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Selector de etiquetas*/
+h1{
+    background: red;
+    padding:10px;
+}
+
+a{
+    font-size: 18px;
+    color:green;
+    text-decoration: none;
+}
+footer a{/*Seleccionar el enlace dentro del footer*/
+
+    color:blue;
+} 
+/*Selector de id-> Cada etiqueta se puede identificar con un id individual*/
+
+#descripcion{
+    border: 5px solid black;
+    padding:10px;
+}
+
+/*Selector de clases*/

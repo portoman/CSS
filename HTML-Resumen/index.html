@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Una nueva web</title>
+</head>
+<body>
+    <!--Etiquetas de texto-->
+    <h1>Resumen HTML etiquetas</h1>
+    <hr/>
+    <h2>Etiquetas de texto: </h2>
+    <h3>Bienvenido a mi web3</h3>
+    <h4>Bienvenido a mi web4</h4>
+    <h5>Bienvenido a mi web5</h5>
+    <h6>Bienvenido a mi web6</h6>
+    <h7>Bienvenido a mi web7, solo funciona hasta la h6</h7>
+    <p>Párrafos: Hola que tal, como estas</p>
+    <p>Hola que tal, como estas</p>
+    <p>Hola que tal, como estas</p>
+   
+    <h3>Título h3</h3>
+    <p>Hola que <strong>STRONG tal</strong>, como <em>estas</em></p>
+    <p>Hola que <span id="resaltado" class="rojo verde">tal, como</span> estas</p>
+
+    <p>Hola <i>que tal </i> <b>que tal</b>, como estas</p>
+    <blockquote>
+        <p>Hola que tal, como estas</p>
+    </blockquote>
+
+    <hr/>
+    <!--Listas: ordenated list(ol) y (ul)unordenated lits-->
+
+    <h2>Listas: </h2>
+    <h3>Ordenated List (ol)</h3>
+    <ol>
+        <li>Manzana
+            <ul>
+                <li>Roja</li>
+                <li>Verde
+                    <ul>
+                        <li>Verde Golden</li>
+                        <li>Verde Emperador</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Pera</li>
+        <li>Banana</li>
+        <li>Naranja</li>
+    </ol>
+
+    <h3>Unordenated List (ul)</h3>
+    <ul>
+        <li>Manzana</li>
+        <li>Pera</li>
+        <li>Banana</li>
+        <li>Naranja</li>
+    </ul>
+    <hr/>
+    <!--Imágenes-->
+    <h2>Imágenes:</h2>
+    <img alt="yo" title="Foto de Alfonso" src="img/Jesús Alfonso.jpg" width="250px"/>
+
+    <hr/>
+     <!--Tablas-->
+     <h2>Tablas:</h2>
+
+     <table border="1">
+         <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Teléfono</th>
+         </tr>
+         <tr>
+            <td>Alfonso</td>
+            <td>Porto</td>
+            <td>620771628</td>
+         </tr>
+         <tr>
+            <td>Lurdes</td>
+            <td colspan="2">Martinez</td>
+         </tr>
+     </table>
+
+     <hr/>
+     <!--Formularios-->
+     <h2>Formularios:</h2>
+     <form>
+         <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" placeholder="Escribe tu nombre..."/>
+        </p>
+        <p>
+            <label for="description">Descripción</label>
+            <textarea name="description"></textarea>
+        </p>
+        Género:
+        <p>
+            <input type="radio" name="genero" value="hombre">Hombre</br>
+            <input type="radio" name="genero" value="mujer">Mujer</br>
+            <input type="radio" name="genero" value="neutro">Neutro</br>
+        </p>
+        <select name="genero2">
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+            <option value="neutro">Neutro</option>
+            
+        </select>
+        <input type="submit" value="Enviar formulario"/>
+     </form>
+     <!--Enlaces-->
+     <h2>Enlaces:</h2>
+     <a href="http://www.google.com" target="_blank">Google</a>
+     <!--Contenedor-->
+     <h2>Contenedores:</h2>
+     <h3>div:</h3>
+     <div id=parrafo1>
+         <p>
+             Estoy dentro de un div con id=parrafo1
+         </p>
+     </div>
+     <h3>header:</h3>
+     <header>Header</header>
+     <br/>
+     <h3>footer:</h3>
+     <footer>Footer</footer>
+
+</body>
+</html>
