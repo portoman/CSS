@@ -1,0 +1,40 @@
+body{
+    background-color: aqua;
+}
+*{
+    padding: 20px;
+    margin: 0px;
+}
+
+#cajas{
+    max-width: 1405px;/*Para delimitar el número de cajas puedo hacerlo limitando la anchura*/
+    border:5px solid blue;
+    background-color: chartreuse;
+}
+.caja{
+    display:block;/*Para que se comporte como una caja*/
+    width: 250px;
+    height: 250px;
+    background-color: rgb(2, 34, 2);
+    border: 10px solid red;/*Borde*/
+    margin:15px;
+    margin-top: 15px;/*Margen*/
+    margin-bottom: 40px;
+    margin-left: 25px;
+    margin-right: 60px;
+    padding: 50px;/*Padding*/
+    float:left;
+}
+.caja p{
+    font-weight: bold;
+    text-align: center;
+    color:lawngreen;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 235px;/*Para centrar el texto en altura...*/
+}
+
+.clearfix{/*Para limpiar el flotado*/
+    float:none;
+    clear:both;
+}

@@ -1,0 +1,100 @@
+/*
+#####SELECTORES####
+*/
+
+/*Selector universal->*: Se seleccionan todos los elementos del html */
+
+*{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Selector de etiquetas*/
+
+h1{
+    background: red;
+    padding:10px;
+}
+
+a{
+    font-size: 18px;
+    color:green;
+    text-decoration: none;
+}
+footer a{/*Seleccionar el enlace dentro del footer*/
+
+    color:blue;
+} 
+
+/*Selector de id-> Cada etiqueta se puede identificar con un id individual. El ID ES ÚNICO E INDIVIDUAL*/
+
+#descripcion{
+    border: 5px solid black;
+    padding:10px;
+}
+
+/*Selector de clases-> Funciona como un id pero se puede aplicar a multiples elementos, no como el id, que solo se puede aplicar a 1*/
+
+.parrafo{
+    font-style: italic;
+    font-weight:bold;
+}
+
+.parrafo1{
+
+    background-color: green;
+    color:white;
+}
+
+.parrafo3{
+
+    background-color:blue;
+    color:rgb(236, 10, 10);
+}
+
+/*Selector de atributos-> En principio para formularios*/
+
+#usuario form{
+    border:5px solid gold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+#usuario form *{
+    display:block;
+}
+
+input[type="text"]{
+    margin-bottom: 15px;
+    padding:20px;
+    width: 300px;
+}
+
+input[type="submit"]{
+background: green;
+color:white;
+padding:15px;
+font-size: 18px;
+text-transform: lowercase;
+border: black solid 5px;
+cursor:pointer;
+}
+
+/*Selector de hijo*/
+#menu{
+    background-color: rgb(129, 129, 253);
+}
+
+#menu > li > ul{
+    background-color: rgb(181, 248, 56);
+}
+
+/*Prioridad*/
+
+#saludo h1{
+    background: brown;/*Se aplica este. CSS da prioridad cuanto más expecífico se es*/
+}
+
+h1{
+    background: purple ; /*!important-> Prioriza sobre todo*/
+}
