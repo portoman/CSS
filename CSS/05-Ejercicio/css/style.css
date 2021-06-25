@@ -6,7 +6,7 @@
 }
 #principal{
     width: 1200px;
-    margin: 0px auto;/*Para centrar elemento*/
+    margin: auto;/*Para centrar elemento*/
     border:1px solid #ccc;
     margin-top: 50px;
 }
@@ -47,5 +47,38 @@
 }
 
 #contenido{
-    width: 70%;
+    width: 60%;
+    float:left;
+    border:1px solid blue;
+}
+
+#lateral{
+    float:left;
+    width: 30%;
+    border:1px solid red;
+    min-height: 500px;
+    text-align: center;
+}
+#contenido .caja{
+    width: 340px;
+    height:200px;
+    background-color: red;
+    border:5px solid blue;
+    color:white;
+    float:left;
+    margin: 5px;
+    text-align: center;
+    line-height: 200px;
+}
+
+#contenido >h1{
+    text-align: center;
+}
+
+footer{
+    width:100%;
+    background-color: #eee;
+    height:60px;
+    line-height: 60px;
+    text-align:center;
 }
