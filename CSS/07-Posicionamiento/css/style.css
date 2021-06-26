@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#principal{
+    width: 1200px;
+    margin: auto;/*Para centrar elemento*/
+    border:1px solid #ccc;
+    margin-top: 50px;
+}
+
+#header{
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+    color:white;
+    text-align: center;
+    line-height: 100px;
+}
+.clearfix{
+    float:none;
+    clear: both;
+}
+#menu{
+    background-color: #eee;
+}
+#menu ul li{
+    /*display: inline-block;*/
+    display: block;
+    float: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+#menu ul li a{
+    color:#444;
+    padding: 20px;
+}
+#menu ul li:hover {
+    background-color:blue;
+    cursor:pointer;/*Para que todo el área se comporte como un botón */
+}
+#menu ul li:hover a{
+    color:white;
+}
+
+#contenido{
+    width: 60%;
+    float:left;
+    border:1px solid blue;
+}
+
+#lateral{
+    float:left;
+    width: 30%;
+    border:1px solid rgb(62, 71, 199);
+    min-height: 500px;
+    max-height: 650px;
+    text-align: center;
+    /*overflow:hidden;*//*Overflow hidden: Todo lo que se sale de la caja desaparece*/
+    overflow-y: scroll;
+}
+#contenido .caja{
+    width: 340px;
+    height:200px;
+    background-color: red;
+    border:5px solid blue;
+    color:white;
+    float:left;
+    margin: 5px;
+    text-align: center;
+    line-height: 200px;
+    box-shadow: 3px -3px 15px black;/*Sombra en cajas por fuera*/
+    border-radius: 20px;/*Borde redondeado*/
+    
+}
+
+#contenido .caja-sombra{
+    width: 340px;
+    height:200px;
+    background-color: red;
+    border:5px solid blue;
+    color:white;
+    float:left;
+    margin: 5px;
+    text-align: center;
+    line-height: 200px;
+    box-shadow: 15px 20px 15px black inset;/*Sombra por dentro*/
+    border-radius: 20px 50px 100px 200px;/*Bordes redondeados con diferentes radios en las esquinas*/
+}
+#contenido >h1{
+    text-align: center;
+    /*SOMBRAS: Se indica en que ejes la queremos: x,y. El tercer valor es el difuminado*/
+    text-shadow:0px 0px 5px black;
+}
+
+footer{
+    width:100%;
+    background-color: #eee;
+    height:60px;
+    line-height: 60px;
+    text-align:center;
+}
+
+.libre{
+    position:absolute;
+    top:50%;
+    left:50%;
+    border: 1px solid black;
+    background-color: yellow;
+    color:black;
+    width: 50px;
+    height:50px;
+    font-size: 13px;
+}
+
+.libre1{
+    z-index: 2;/*Para mover la caja en el eje z*/
+}
+.libre2{
+    top:47%;
+    left:50%;
+    background-color: green;
+}
+
+.fija{
+    position:fixed;/*Posición fija*/
+    top:50%;
+    left:0px;
+    border: 1px solid black;
+    background-color: blue;
+    color:white;
+    width: 50px;
+    height:50px;
+    font-size: 13px;
+}

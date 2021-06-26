@@ -70,6 +70,7 @@
     text-align: center;
     line-height: 200px;
     box-shadow: 3px -3px 15px black;/*Sombra en cajas por fuera*/
+    border-radius: 20px;/*Borde redondeado*/
 }
 
 #contenido .caja-sombra{
@@ -83,6 +84,7 @@
     text-align: center;
     line-height: 200px;
     box-shadow: 15px 20px 15px black inset;/*Sombra por dentro*/
+    border-radius: 20px 50px 100px 200px;/*Bordes redondeados con diferentes radios en las esquinas*/
 }
 #contenido >h1{
     text-align: center;

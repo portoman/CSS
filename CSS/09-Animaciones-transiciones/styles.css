@@ -1,0 +1,56 @@
+#boton{
+    display: block;
+    padding:20px;
+    background-color: green;
+    color:white;
+    width: 150px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif4;
+    font-weight: bold;
+    text-align: center;
+    border: 5px solid rgb(1, 37, 1);
+   /* transition: all 500ms;/*Transición: Ejemplo->Que cambie de aspecto en 3 segundos*/
+   transition: border-radius 3s, border 1s, background-color 500ms;
+}
+
+#boton:hover{
+    border-radius: 20px;
+    background-color: aquamarine;
+    border: 5px solid red;
+}
+
+#caja{
+
+    width: 250px;
+    height: 250px;
+    background:lightgreen;
+    color:white;
+    border: 5px solid black;
+    margin-top: 25px;
+    font-size:30px;
+    text-align: center;
+    line-height: 200px;
+    animation-name:desplazamiento;/*Se indica la animación*/
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+
+/*Animaciones. Se empieza creando los keyframes*/
+
+@keyframes desplazamiento{
+    0% {
+        margin-left: 0px;
+        transform:rotate(0deg);
+    }50%{
+        margin-left: 1200px;
+        transform:rotate(360deg);
+        border-radius:100px;
+    }
+    75%{background-color: blue;
+
+    }100% {
+        margin-left: 0px;
+        transform:rotate(0deg);
+    }
+}

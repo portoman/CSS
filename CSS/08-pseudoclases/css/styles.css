@@ -1,0 +1,52 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li{
+    font-size: 20px;
+    line-height: 50px;
+    margin-left: 100px;
+    
+}
+
+ul li:first-child{
+    color: blue;
+}
+
+ul li:nth-child(3){
+    color: red;
+}
+
+ul li:nth-child(4){
+    color: green;
+}
+
+#mi-pagina{
+    font-size: 40px;
+    color: brown;
+}
+
+#mi-pagina:visited{
+    color:aquamarine;
+}
+
+#mi-pagina:hover{
+    color:blue;
+}
+#mi-pagina:active{
+    color:green;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input[type="text"]{
+    margin-top:  50px;
+    padding:10px;
+}
+
+input[type="text"]:focus{
+    background-color: yellow;
+}
+
+input[type="text"]:hover{
+    background-color: orange;
+}
