@@ -49,6 +49,9 @@ header{
     clear: both;
 }
 
+body{
+    background-color: rgb(235, 227, 227);
+}
 #menu ul li:hover {
     background-color:rgb(11, 114, 80);
     color:white;
@@ -57,4 +60,59 @@ header{
 }
 #menu ul li:hover a {
     color:azure;
+}
+
+#barra{
+    width: 200px;
+    height: 780px;
+    border:1px solid black;
+    margin-top: 20px;
+    margin-left: 80px;
+    text-align: center;
+    background-color: aliceblue;
+    
+}
+#titulo1{
+    border-top: 2px  solid black;
+    border-bottom: 2px  solid black;
+    margin: 20px 10px 20px 10px;
+    padding: 5px;
+    background-color: rgb(146, 197, 241);
+}
+input[type="submit"]{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: green;
+    color:white;
+    padding:10px;
+    font-size: 18px;
+    border: black solid 2px;
+    cursor:pointer;
+    }
+
+.acceso{
+    line-height: 30px;
+}
+
+#caja1{
+    height:250px;
+    border-bottom: 2px dashed green;
+}
+#caja2{
+    height:205px;
+    border-bottom: 2px dashed green;
+}
+#caja3{
+    margin-top: 28px;
+    height:205px;
+}
+
+#titulo2{
+    border-top: 2px  solid black;
+    border-bottom: 2px  solid black;
+    margin: 20px 10px 20px 10px;
+    padding: 5px;
+    background-color: rgb(146, 197, 241);
+    color: blue;
+    font-weight: bold;
 }
