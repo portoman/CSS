@@ -2,27 +2,42 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Ejercicio 2</title>
+    <title>Ejercicio CSS+HTML</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link  rel="icon" type="image/x-icon" href="img/css_2.png"/>
   </head>
   <body>
     <header>
       <div id="presentacion">
         <img id="imagen" src="img/css.png" />
-        <h1>Curso de CSS</h1>
+        <h1><a href="#">Curso de CSS</a></h1>
       </div>
     </header>
-    <div id="menu">
+    <nav id="menu">
       <ul>
         <li><a href="#">Inicio</a></li>
-        <li><a href="#">Contenido</a></li>
-        <li><a href="#">Requerimientos</a></li>
-        <li><a href="#">Inicio</a></li>
+        <li>
+          <a href="#">Contenido</a>
+            <ul>
+              <li><a href="#">01-Selectores</a></li>
+              <li><a href="#">02-Fuentes</a></li>
+              <li><a href="#">03-Fondos</a></li>
+              <li><a href="#">04-Cajas</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Requerimientos</a>
+          <ul>
+            <li><a href="#">01-Ordenador</a></li>
+            <li><a href="#">02-HTML</a></li>
+            <li><a href="#">03-Visual Studio Code</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Referencias</a></li>
         <li><a href="#">Libros</a></li>
         <li><a href="#">Música</a></li>
         <li><a href="#">Multimedia</a></li>
       </ul>
-    </div>
+    </nav>
     <div class="clearfix"></div>
     <aside id="barra">
       <div id="titulo1">Entrar en la web</div>
@@ -54,6 +69,35 @@
           <input type="text" /><br />
           <input type="submit" value="Entrar" />
       </div>
+      <div class="clearfix"></div>
     </aside>
+    
+    <div id="noticias1">
+      <p class="titulo3">Noticias</p>
+      <p class="parrafo">
+       <span id="tituloEntrada">&#x00040 Título Entrada</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque, ex vel bibendum iaculis, nunc ipsum porttitor odio, scelerisque porta tortor diam ut lorem. Sed malesuada imperdiet bibendum. Donec blandit velit leo, condimentum accumsan neque consectetur et. Phasellus ac tempor ipsum. Nullam euismod augue in erat lobortis iaculis. Vestibulum at felis eget purus sodales tincidunt. Pellentesque est mauris, congue id risus maximus, faucibus sagittis urna. Integer convallis eros ligula, in gravida metus rutrum dignissim.
+      </p>
+      <p class="parrafo">
+        <span id="tituloEntrada">&#x00040 Título Entrada</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque, ex vel bibendum iaculis, nunc ipsum porttitor odio, scelerisque porta tortor diam ut lorem. Sed malesuada imperdiet bibendum. Donec blandit velit leo, condimentum accumsan neque consectetur et. Phasellus ac tempor ipsum. Nullam euismod augue in erat lobortis iaculis. Vestibulum at felis eget purus sodales tincidunt. Pellentesque est mauris, congue id risus maximus, faucibus sagittis urna. Integer convallis eros ligula, in gravida metus rutrum dignissim.
+       </p>
+       <p class="parrafo">
+        <span id="tituloEntrada">&#x00040 Título Entrada</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque, ex vel bibendum iaculis, nunc ipsum porttitor odio, scelerisque porta tortor diam ut lorem. Sed malesuada imperdiet bibendum. Donec blandit velit leo, condimentum accumsan neque consectetur et. Phasellus ac tempor ipsum. Nullam euismod augue in erat lobortis iaculis. Vestibulum at felis eget purus sodales tincidunt. Pellentesque est mauris, congue id risus maximus, faucibus sagittis urna. Integer convallis eros ligula, in gravida metus rutrum dignissim.
+       </p>
+    </div>
+    <div id="noticias1">
+      <p class="titulo3">Noticias</p>
+      <p class="parrafo">
+       <span id="tituloEntrada">&#x00040 Título Entrada</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque, ex vel bibendum iaculis, nunc ipsum porttitor odio, scelerisque porta tortor diam ut lorem. Sed malesuada imperdiet bibendum. Donec blandit velit leo, condimentum accumsan neque consectetur et. Phasellus ac tempor ipsum. Nullam euismod augue in erat lobortis iaculis. Vestibulum at felis eget purus sodales tincidunt. Pellentesque est mauris, congue id risus maximus, faucibus sagittis urna. Integer convallis eros ligula, in gravida metus rutrum dignissim.
+      </p>
+      <p class="parrafo">
+        <span id="tituloEntrada">&#x00040 Título Entrada</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque, ex vel bibendum iaculis, nunc ipsum porttitor odio, scelerisque porta tortor diam ut lorem. Sed malesuada imperdiet bibendum. Donec blandit velit leo, condimentum accumsan neque consectetur et. Phasellus ac tempor ipsum. Nullam euismod augue in erat lobortis iaculis. Vestibulum at felis eget purus sodales tincidunt. Pellentesque est mauris, congue id risus maximus, faucibus sagittis urna. Integer convallis eros ligula, in gravida metus rutrum dignissim.
+       </p>
+       <p class="parrafo">
+        <span id="tituloEntrada">&#x00040 Título Entrada</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque, ex vel bibendum iaculis, nunc ipsum porttitor odio, scelerisque porta tortor diam ut lorem. Sed malesuada imperdiet bibendum. Donec blandit velit leo, condimentum accumsan neque consectetur et. Phasellus ac tempor ipsum. Nullam euismod augue in erat lobortis iaculis. Vestibulum at felis eget purus sodales tincidunt. Pellentesque est mauris, congue id risus maximus, faucibus sagittis urna. Integer convallis eros ligula, in gravida metus rutrum dignissim.
+       </p>
+    </div>
+    <footer>
+      Derechos reservados &copy
+    </footer>
   </body>
 </html>
