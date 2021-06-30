@@ -1,20 +1,20 @@
 /*Fuentes*/
 @font-face {
   font-family: "TrebuchetMS";
-  src: url("fonts/TrebuchetMS.ttf");
+  src: url("..fonts/TrebuchetMS.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "BebasNeue";
-  src: url("/05-Maquetación-Avanzada-Ejercicio/fonts/BebasNeue.otf");
+  src: url("../fonts/BebasNeue.otf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "WebSymbolsRegular";
-  src: url(/05-Maquetación-Avanzada-Ejercicio/fonts/WebSymbols-Regular.otf);
+  src: url("../fonts/WebSymbols-Regular.otf");
   font-weight: normal;
   font-style: normal;
 }
@@ -32,10 +32,10 @@ body {
 }
 
 .wrap {
-  width: 1200px;
+  width: 1300px;
   margin: 0px auto;
 }
-.gear, .icon{
+.gear, .icon, #user,#password, .twitter, .facebook, .youtube {
   font-family: "WebSymbolsRegular";
 }
 
@@ -109,11 +109,11 @@ transition:all 200ms;
 /*BANNER*/
 
 #banner{
-  width: 95%;
+  width: 94.5%;
   height:100px;
   border:10px solid white;
   box-shadow: 0px 0px 2px gray;
-  background: url(/05-Maquetación-Avanzada-Ejercicio/img/bakbaner.png);
+  background: url(../img/bakbaner.png);
   background-position: -200px -200px;
   margin: 20px auto;
 }
@@ -134,9 +134,82 @@ transition:all 200ms;
 /*Tarjetas*/
 
 .cards{
-  width:205px;
+  width:208px;
   height: 305px;
   overflow: hidden;
-  margin: 20px;
+  margin: 25px;
   margin-top: 40px;
+  border:1px solid black;
+  display:block;
+  float:left;
+  box-shadow: 1px 1px 2px black;
+  cursor:pointer;
+}
+
+.icon{
+  font-size: 70px;
+  text-align: center;
+  margin: 40px 0px 20px 0px;
+}
+.cards:hover{
+  transform:scale(1.1,1.1);
+  background-color: #e0ebf0;
+}
+
+.category{
+  color:rgb(34, 131, 175);
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+  line-height: 50px;
+}
+.description{
+  text-align: center;
+  color:rgb(82, 147, 177);
+}
+
+/*Barra lateral*/
+
+#lateral{
+  width: 300px;
+  min-height: 1200px;
+  font-family:"TrebuchetMS" ;
+  display:block;
+  float:right;
+  margin-right: 55px;
+}
+
+aside h3{
+  display: block;
+  width: auto;
+  height: 45px;
+  line-height: 49px;
+  background: url(../img/pxgray.png);
+  box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f,2px 3px 0px #393d3f, 3px 4px 0px #393d3f;
+  font-size: 30px;
+  font-family: "BebasNeue";
+  font-weight: normal;
+  letter-spacing: 2px;
+  padding-left: 15px;
+  margin-top:30px;
+  margin-bottom: 15px;
+}
+#lateral h3:first-child{
+  margin-top: 0px;
+}
+/*Contenido central*/
+#article{
+  display:block;
+  float:left;
+}
+#ultimosArticulos{
+  font-family: "BebasNeue";
+  font-size: 40px;
+  border:1px solid black;
+  width: 60%;
+  margin: 30px 5px 10px 10px;
+  text-align: center;
+  background-color: rgba(89, 91, 94, 0.623);
+  
+
 }
