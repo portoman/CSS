@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <title>Maquetación Avanzada</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="icon" type="favicon/x-icon" href="img/supertux.png" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
   </head>
   <body>
     <!--Inicio de Cabecera-->
@@ -25,7 +26,7 @@
       </div>
     </header>
     <!--Fin de Cabecera-->
-    
+    <!--Inicio de Wrap-->
     <section class="wrap">
       <section id="info">
         <!--Inicio Banner-->
@@ -71,69 +72,244 @@
           </div>
         </div>
       </section>
-    </section>
-    <!--Fin Tarjetas-->
-    <!--Inicio Barra Lateral-->
-    <aside id="lateral">
+
+      <!--Fin Tarjetas-->
+      <div class="clearfix"></div>
+      <!--Inicio Barra Lateral-->
+      <aside id="lateral">
         <h3>BUSCAR</h3>
         <div id="search">
           <form>
-            <input type="text"/>
-            <input id="search2"type="button" value="L"/>
+            <input type="text" />
+            <input id="search2" type="button" value="L" />
           </form>
         </div>
         <h3>LOGIN</h3>
-          <div id="login" class="aside-box">
-            <form>
-              <label id="user">U</label>
-              <input type="email"/>
+        <div id="login" class="aside-box">
+          <form>
+            <label id="user">U</label>
+            <input type="email" />
 
-              <label id="password">w</label>
-              <input type="password"/>
+            <label id="password">w</label>
+            <input type="password" />
 
-              <input type="submit" value="Entrar"/>
-              <input type="submit" value="Limpiar"/>
+            <input type="submit" value="Entrar" />
+            <input type="submit" value="Limpiar" />
 
-                <a href="#">Regístrate aquí</a>
-                <a href="#">¿Has olvidado la contraseña?</a>
-            </form>
-          </div>
-        <h3>REDES SOCIALES</h3>
-            <div id="social" class="aside-box">
-              <div class="twitter">
-                <a href="#">t</a>
-              </div>
-              <div class="facebook">
-                <a href="#">f</a>
-              </div>
-              <div class="youtube">
-                <a href="#">y</a>
-              </div>
-            </div>
-        <h3>PATROCINADORES </h3>
-        <div id="sponsors" class="aside-box">
-
+            <a href="#">Regístrate aquí</a>
+            <a href="#">¿Has olvidado la contraseña?</a>
+          </form>
         </div>
-    </aside>
-    <!--Fin Barra Lateral-->
-    <section id="article">
-      <div id="ultimosArticulos">
-        <h2>ULTIMOS ARTICULOS</h2>
-      </div>
-      <div class="individualArticle">
-        <h3>Título del Artículo</h3>
-        <p id="fecha">Fecha:25 nov Categoría: Prueba</p>
-        <p>
-          Integer diam mauris, feugiat eu aliquet quis, lacinia ac ipsum.
-          Integer at elit eu enim porta iaculis. Vestibulum ut suscipit arcu.
-          Suspendisse scelerisque finibus eros. Maecenas vel feugiat enim.
-          Aliquam erat volutpat. Duis placerat auctor ultricies. Proin ultricies
-          augue nibh, a sollicitudin nulla porta et. Nam semper consectetur
-          nisl, ut faucibus libero congue non. In mattis condimentum facilisis.
-          Integer consequat maximus erat et posuere. Vivamus sit amet arcu elit.
-          <span id="leerMas">Leer más</span>
-        </p>
-      </div>
+        <h3>REDES SOCIALES</h3>
+        <div id="social" class="aside-box">
+          <div class="twitter">
+            <a href="#" class="icon">t</a>
+            <p class="overlay">
+              Twitter
+            </p>
+          </div>
+          <div class="facebook">
+            <a href="#" class="icon">f</a>
+            <p class="overlay">
+              Facebook
+            </p>
+          </div>
+          <div class="youtube">
+            <a href="#" class="icon">y</a>
+            <p class="overlay">
+              Youtube
+            </p>
+          </div>
+        </div>
+        <h3>PATROCINADORES</h3>
+        <div id="sponsors" class="aside-box"></div>
+      </aside>
+
+      <!--Fin Barra Lateral-->
+
+      <!--Inicio Artículos-->
+      <section id="articles">
+        <div id="ultimosArticulos">
+          <h2>ULTIMOS ARTICULOS</h2>
+        </div>
+        <div class="clearfix"></div>
+        <article>
+          <div class="data">
+            <span>Fecha: 12 dic</span>
+            <span>Categoría: Pruebas</span>
+          </div>
+          <h4>
+            <a href="#">Título del artículo</a>
+          </h4>
+          <p>
+            Integer diam mauris, feugiat eu aliquet quis, lacinia ac ipsum.
+            Integer at elit eu enim porta iaculis. Vestibulum ut suscipit arcu.
+            Suspendisse scelerisque finibus eros. Maecenas vel feugiat enim.
+            Aliquam erat volutpat. Duis placerat auctor ultricies. Proin
+            ultricies augue nibh, a sollicitudin nulla porta et. Nam semper
+            consectetur nisl, ut faucibus libero congue non. In mattis
+            condimentum facilisis. Integer consequat maximus erat et posuere.
+            Vivamus sit amet arcu elit.
+            <span id="leerMas">Leer más</span>
+          </p>
+        </article>
+        <article>
+          <div class="data">
+            <span>Fecha: 12 dic</span>
+            <span>Categoría: Pruebas</span>
+          </div>
+          <h4>
+            <a href="#">Título del artículo</a>
+          </h4>
+          <p>
+            Integer diam mauris, feugiat eu aliquet quis, lacinia ac ipsum.
+            Integer at elit eu enim porta iaculis. Vestibulum ut suscipit arcu.
+            Suspendisse scelerisque finibus eros. Maecenas vel feugiat enim.
+            Aliquam erat volutpat. Duis placerat auctor ultricies. Proin
+            ultricies augue nibh, a sollicitudin nulla porta et. Nam semper
+            consectetur nisl, ut faucibus libero congue non. In mattis
+            condimentum facilisis. Integer consequat maximus erat et posuere.
+            Vivamus sit amet arcu elit.
+            <span id="leerMas">Leer más</span>
+          </p>
+        </article>
+        <article>
+          <div class="data">
+            <span>Fecha: 12 dic</span>
+            <span>Categoría: Pruebas</span>
+          </div>
+          <h4>
+            <a href="#">Título del artículo</a>
+          </h4>
+          <p>
+            Integer diam mauris, feugiat eu aliquet quis, lacinia ac ipsum.
+            Integer at elit eu enim porta iaculis. Vestibulum ut suscipit arcu.
+            Suspendisse scelerisque finibus eros. Maecenas vel feugiat enim.
+            Aliquam erat volutpat. Duis placerat auctor ultricies. Proin
+            ultricies augue nibh, a sollicitudin nulla porta et. Nam semper
+            consectetur nisl, ut faucibus libero congue non. In mattis
+            condimentum facilisis. Integer consequat maximus erat et posuere.
+            Vivamus sit amet arcu elit.
+            <span id="leerMas">Leer más</span>
+          </p>
+        </article>
+        <article>
+          <div class="data">
+            <span>Fecha: 12 dic</span>
+            <span>Categoría: Pruebas</span>
+          </div>
+          <h4>
+            <a href="#">Título del artículo</a>
+          </h4>
+          <p>
+            Integer diam mauris, feugiat eu aliquet quis, lacinia ac ipsum.
+            Integer at elit eu enim porta iaculis. Vestibulum ut suscipit arcu.
+            Suspendisse scelerisque finibus eros. Maecenas vel feugiat enim.
+            Aliquam erat volutpat. Duis placerat auctor ultricies. Proin
+            ultricies augue nibh, a sollicitudin nulla porta et. Nam semper
+            consectetur nisl, ut faucibus libero congue non. In mattis
+            condimentum facilisis. Integer consequat maximus erat et posuere.
+            Vivamus sit amet arcu elit.
+            <span id="leerMas">Leer más</span>
+          </p>
+        </article>
+        <article>
+          <div class="data">
+            <span>Fecha: 12 dic</span>
+            <span>Categoría: Pruebas</span>
+          </div>
+          <h4>
+            <a href="#">Título del artículo</a>
+          </h4>
+          <p>
+            Integer diam mauris, feugiat eu aliquet quis, lacinia ac ipsum.
+            Integer at elit eu enim porta iaculis. Vestibulum ut suscipit arcu.
+            Suspendisse scelerisque finibus eros. Maecenas vel feugiat enim.
+            Aliquam erat volutpat. Duis placerat auctor ultricies. Proin
+            ultricies augue nibh, a sollicitudin nulla porta et. Nam semper
+            consectetur nisl, ut faucibus libero congue non. In mattis
+            condimentum facilisis. Integer consequat maximus erat et posuere.
+            Vivamus sit amet arcu elit.
+            <span id="leerMas">Leer más</span>
+          </p>
+        </article>
+        <article>
+          <div class="data">
+            <span>Fecha: 12 dic</span>
+            <span>Categoría: Pruebas</span>
+          </div>
+          <h4>
+            <a href="#">Título del artículo</a>
+          </h4>
+          <p>
+            Integer diam mauris, feugiat eu aliquet quis, lacinia ac ipsum.
+            Integer at elit eu enim porta iaculis. Vestibulum ut suscipit arcu.
+            Suspendisse scelerisque finibus eros. Maecenas vel feugiat enim.
+            Aliquam erat volutpat. Duis placerat auctor ultricies. Proin
+            ultricies augue nibh, a sollicitudin nulla porta et. Nam semper
+            consectetur nisl, ut faucibus libero congue non. In mattis
+            condimentum facilisis. Integer consequat maximus erat et posuere.
+            Vivamus sit amet arcu elit.
+            <span id="leerMas">Leer más</span>
+          </p>
+        </article>
+        <article id="blog">
+          <a href="#">IR AL BLOG</a>
+        </article>
+      </section>
+      <!--Fin Artículos-->
     </section>
+    <!--Fin Wrap-->
+    <!--Inicio PIÉ DE PÁGINA-->
+    <div class="clearfix"></div>
+    <footer id="footer">
+      <div class="wrap">
+        <div id="menu_footer">
+          <h5>MENÚ</h5>
+          <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">FORMACIÓN</a></li>
+            <li><a href="#">CONTACTO</a></li>
+          </ul>
+        </div>
+
+        <div id="location">
+          <h5>¿DONDE ESTAMOS?</h5>
+          <!--Introducir dirección Google Maps: Se busca dirección, compartir, insertar un mapa, copiar HTML-->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2901.072800201914!2d-8.404305884511885!3d43.35458777913253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2e7c9b9d6ef065%3A0x34067cc1d0dbbb9e!2sC.C.%20Cuatro%20Caminos!5e0!3m2!1ses!2ses!4v1625157650482!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div id="info">
+          <h5>Desarrollado con</h5>
+          <p>
+            <img src="img/html5-badge-h-css3-graphics-multimedia-performance-semantics.png" alt="Creado con HTML y CSS"/>
+          </p>
+          <h5>Optimizado para</h5>
+          <p id="browsers">
+            <a href="#">
+              <img src="img/firefox-icon.png" alt="Firefox" title="Firefox"/>
+            </a>
+            <a href="#">
+              <img src="img/chrome.png" alt="Chrome" title="Chrome"/>
+            </a>
+            <a href="#">
+              <img src="img/Opera_256x256.png" alt="Opera" title="Opera"/>
+            </a>
+            <a href="#">
+              <img src="img/safari.png" alt="Safari" title="Safari"/>
+            </a>
+            <a href="#">
+              <img src="img/android.png" alt="Android" title="Android"/>
+            </a>
+            <a href="#">
+              <img src="img/ios.png" alt="Apple" title="Apple"/>
+            </a>
+          </p>
+          <h5>AUTOR</h5>
+          <p>&copy; Alfonso Porto</p>
+        </div>
+      </div>
+    </footer>
+    <!--Fin PIÉ DE PÁGINA-->
   </body>
 </html>
