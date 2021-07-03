@@ -1,0 +1,31 @@
+/*Para compilar: En la consola
+
+cd C:\Users\portb\OneDrive\Escritorio\CSS\07-LESS
+
+lessc  estilos.less styles.css*/
+/*Para que se apliquen los cambios en LESS siempre hay que compilar.....*/
+body {
+  background-color: lightblue;
+}
+h1 {
+  font-family: Arial;
+}
+.informacion ul a {
+  color: white;
+  font-size: 20px;
+}
+.informacion {
+  box-shadow: 0px 0px 10px black;
+  text-shadow: 0px 0px 5px black;
+}
+h1 {
+  box-shadow: 0px 0px 15px black;
+  text-shadow: 0px 0px 15px black;
+}
+h1 {
+  font-size: 37px;
+}
+h1 {
+  color: blue;
+  color: black;
+}

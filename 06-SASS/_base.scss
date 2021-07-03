@@ -1,0 +1,203 @@
+/*Variables*/
+
+$fuente-tipica: sans-serif, Helvetica, Arial;
+
+$color-fondo: #ccc;
+
+$color-letra: red;
+
+$color-secundario: blue;
+
+$Tamaño15: 30px;
+
+/*Para compilar este archivo SASS es necesario meter este código en el consola:
+
+C:\Users\portb\OneDrive\Escritorio\CSS\06-SASS>
+
+sass --watch estilos.scss styles.css
+
+*/
+
+/*Uso de variables*/
+body {
+  background-color: $color-fondo;
+}
+
+h1 {
+  font-family: $fuente-tipica;
+  color: $color-letra;
+}
+
+p {
+  color: $color-secundario;
+  font-size: $Tamaño15;
+}
+
+/*Anidación*/
+
+.caja {
+  border: 1px solid black;
+  width: 500px;
+  margin: 0px auto;
+  text-align: center;
+  background-color: aliceblue;
+  padding: 10px;
+  h1 {
+    color: green;
+  }
+  p {
+    color: aqua;
+  }
+
+  .info {
+    font-size: 10px;
+    #autor {
+      font-size: 20px;
+      font-weight: bold;
+      color: blue;
+    }
+  }
+}
+
+/*Bandera de España*/
+.banderaE {
+  float: left;
+  display: block;
+  width: 30%;
+  border: 1px solid black;
+  height: 300px;
+  margin: 20px 20px 20px 240px;
+  #rojo {
+    height: 100px;
+    background-color: red;
+  }
+  #amarillo {
+    height: 100px;
+    background-color: yellow;
+  }
+}
+
+/*Bandera Catalana*/
+.banderaC {
+  float: left;
+  display: block;
+  width: 30%;
+  border: 1px solid black;
+  height: 300px;
+  margin: 0px auto;
+  margin: 20px 20px 20px 200px;
+  #rojo {
+    height: 25px;
+    background-color: red;
+  }
+  #amarillo {
+    height: 25px;
+    background-color: yellow;
+  }
+}
+
+/*Mixing/ Funciones-> Conjunto de instrucciones, que ademas se pueden paramétrizar*/
+
+@mixin crearBorder() {
+  border: 5px solid red;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px black;
+  width: 30%;
+}
+
+@mixin diferentesColores($color, $size, $colorshadow) {
+  font: $color;
+  font-size: $size;
+  box-shadow: 0px 0px $size $colorshadow;
+  width: 40%;
+}
+
+.mixing {
+  h3 {
+    @include crearBorder();
+    float: none;
+    clear: both;
+  }
+  h4 {
+    @include diferentesColores(green, 40px, yellow);
+    float: none;
+    clear: both;
+  }
+}
+
+//Herencia
+
+%alert-normal{
+    border:1px solid grey;
+    background: #eee;
+    color:grey;
+    padding:10px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.alert{
+    @extend %alert-normal;
+}
+
+.alert-danger{
+    @extend %alert-normal;
+    color:red;
+    border-color: red;
+}
+
+.alert-success{
+    @extend %alert-normal;
+    color:green;
+    border-color: green;
+}
+
+//Operadores
+
+h1{
+    font-size: 20px +5px -1px;
+}
+
+$caja:200px;
+$wrap:900px;
+
+.cajas{
+    width:$wrap;
+    margin: 0px auto;
+
+}
+.caja{
+    width: $caja/ $wrap *100%;
+    float: left;
+}
+.clearfix{
+    float:none;
+    clear: both;
+}
+
+//Condicionales-IF. Reglas con poca utilidad, para iteraciones mejor JavaScript
+
+$color-fondo:black;
+
+h1{
+  @if $color-fondo == #ccc{
+  color:black;
+  }@else if $color-fondo == black{
+color:lightsalmon;
+  }
+@else{
+  color:pink;
+}
+}
+
+
+//FOR. Algo de utilidad
+
+$contador:1;
+
+@for $contador from 1 through 9{
+  .listado ul li:nth-child(#{$contador}){
+    font-size: $contador*10px;
+  }
+}
+  
