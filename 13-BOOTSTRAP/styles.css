@@ -1,0 +1,24 @@
+#menu3{
+    height: 50px;
+}
+
+#menu3 ul{
+    text-decoration: none;
+    list-style: none;
+    line-height: 50px;
+
+}
+
+.item{
+    height:150px;
+}
+
+#products{
+    text-align: center;
+}
+
+footer{
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+}
