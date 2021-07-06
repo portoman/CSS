@@ -1,3 +1,10 @@
+#menu2 ul{
+    text-decoration: none;
+    list-style: none;
+    line-height: 150px;
+}
+
+
 #menu3{
     height: 50px;
 }
@@ -9,6 +16,7 @@
 
 }
 
+
 .item{
     height:150px;
 }
@@ -17,8 +25,20 @@
     text-align: center;
 }
 
+#products h2{
+    padding-top:8px ;
+}
+
 footer{
     height:50px;
     line-height: 50px;
     text-align: center;
+}
+
+.lateral{
+    height:500px;
+}
+
+.lateral>div{
+    height:calc(250px/3);/*Función calc*/
 }

@@ -52,12 +52,12 @@ body{
 #layout2{
     display:flex;
     flex-direction: row;
-    justify-content: space-around;/*Otra propiedad para ajustar contenido horizontalmente*/
+    justify-content: space-around;/*Propiedad para ajustar contenido horizontalmente*/
     border:3px solid black;
     padding: 6px;
     background-color: rgb(200, 238, 200);
     height:700px;
-    align-items: baseline;/*Otra propiedad para ajustar contenido verticalmente*/
+    align-items: baseline;/*Propiedad para ajustar elementos verticalmente*/
 }
 
 .caja2{
